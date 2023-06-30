@@ -1,0 +1,49 @@
+{% extends "main.html" %}
+{% block content %}
+{% load static %}
+
+
+<h1>DETAIL</h1>
+<div class="row white">
+
+  <div class="col">
+<ul>
+    {% for x in comp %}
+    <li>{{ x.name }}  </li>   
+    <li style="text-align: right;">{{ x.price }}</li>
+    {% endfor %}
+  </ul>
+  </div>
+
+  </div>
+
+
+
+  <!--Carousel-->
+<div class="row">
+  <div class="col m-10 p-10" style="border: 2px black solid">
+      <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'ecomm/media/ad-acer.jpeg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'ecomm/media/ad-apple.jpeg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'ecomm/media/ad-windows.jpeg' %}" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
+</div>
+
+{% endblock %}

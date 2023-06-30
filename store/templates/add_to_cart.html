@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row white">
+<h1>Add to CART</h1>
+<form action = "{% url 'add_to_cart' %}" method = "POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>Submit</button>
+</form>
+</div>
+{% endblock %}

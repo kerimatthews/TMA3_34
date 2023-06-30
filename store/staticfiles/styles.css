@@ -1,0 +1,147 @@
+/*Dark classic blue (#0A1828), turquoise (#178582), gold (#BFA181)*/
+
+body{
+    background-color:#0A1828;
+    color: #178582;
+}
+
+p, h1, h2 {
+    color:#BFA181 ;
+}
+
+p{
+    font-size: small;
+}
+
+ul{
+    list-style: none;
+}
+#btn{
+    border-radius: 5px;
+}
+
+/* https://www.w3schools.com/css/css3_buttons.asp */
+.button:hover {background-color: #3e8e41}
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+  #query{
+    border-radius: 5px;
+    width: 70%;
+    padding:3px;
+    margin: 3px;
+  }
+
+  .container-fluid{
+    margin-top: 6px;
+  }
+
+ /* nav li{
+    border: 1px #BFA181 solid;
+    text-align: center;
+    float: left;
+    margin:4px;
+  }
+*/
+
+a{
+    text-decoration: none;
+    padding: 2px;
+    display: block;
+
+    color: white;
+  }
+
+a:hover {
+    color:#0d6efd;;
+  }
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  .hnav{
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .hnav a{
+    margin-top: 8px;
+  }
+
+  .images{
+        width:50%;
+        height:auto;   
+  }
+
+  img {
+    width:100%;
+    height:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.divided{
+    width:auto;
+    min-height:50%;
+    margin:0;
+    padding: 0;
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    font-size: small;
+    padding:12px;
+}

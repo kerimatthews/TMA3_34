@@ -1,0 +1,28 @@
+
+{% extends "main.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row white">
+    <div class="col-4">
+<h1>CART List</h1></div>
+<div class="col">
+<ul>
+    <!-- Iterate over object_list -->
+    {% for object in object_list %}
+    <!-- Display Objects -->
+    <li>{{ object.computer }}</li>
+    <li style="text-align: right;">{{ object.price }}</li>
+   
+    <hr/>
+    <!-- If object_list is empty  -->
+    {% empty %}
+    <li>No objects yet.</li>
+    {% endfor %}
+</ul>
+
+</div>
+<div class="col-1"></div>
+</div>
+
+{% endblock %}

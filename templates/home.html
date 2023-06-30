@@ -1,0 +1,55 @@
+{% extends "main.html" %}
+{% block content %}
+{% load static %}
+
+<div class="row">
+    <div class="col p-16 m-16" style="border: 1px black solid; background-color: white;">
+      <a href="/computers/5/"><img class="images" src="{% static 'ecomm/media/imac.jpeg' %}"></div></a>
+    <div class="col p-16 m-16" style="border: 1px black solid; background-color: white;">
+        <a href="/computers/6/"><img class="images" src="{% static 'ecomm/media/Lenovo.jpeg' %}"></div></a>
+     <div class="col p-16 m-16" style="border: 1px black solid; background-color: white;">
+      <a href="/"><img class="images" src="{% static 'ecomm/media/SSD.jpeg' %}"></div></a>
+</div>
+<div class="row">
+    <div class="col m-10 p-10" style="border: 4px black solid">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'ecomm/media/ad-acer.jpeg' %}" class="d-block w-100"  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'ecomm/media/ad-apple.jpeg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'ecomm/media/ad-windows.jpeg' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6 "style="height: 20rem; border: 4px black solid; background-color: white;">
+        <img src="{% static 'ecomm/media/deals.jpeg' %}" style="width: 80%; height:auto;">
+    </div>
+    <div class="col p-0" style="border: 1px black solid; background-color: white;">
+        <div class="divided" style="border: 1px black solid; background-color: white;">
+            <img src="{% static 'ecomm/media/apple.jpeg' %}" class="images">
+        </div>
+        <div class="divided" style="border: 1px black solid; background-color: white; ">
+            <img src="{% static 'ecomm/media/dell.jpeg' %}" class="images" >
+        </div>
+    </div>
+    <div class="col-2" style="border: 1px black solid; background-color: white;">
+        <img src="{% static 'ecomm/media/sale.png' %}">
+    </div>
+</div>
+{% endblock %}
